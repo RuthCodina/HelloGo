@@ -81,7 +81,7 @@ func ramdomThree() {
 		x := rand.Intn(5)
 		switch {
 		case x < 3:
-			fmt.Printf("the variable es less than 3, itiration: %v\n", i, x)
+			fmt.Printf("the variable es less than 3, itiration %v: %v\n", i, x)
 		default:
 			fmt.Printf("the variable is greater or iqual than three, itiration %v: %v\n", i, x)
 		}
@@ -90,8 +90,14 @@ func ramdomThree() {
 
 func loopsTwo() {
 	i := 0
-	for i < 10 {
-		fmt.Println(i)
-		i++
+	for i < 20 {
+		if i == 13 {
+			break
+		} else if i == 8 {
+			continue
+		} else {
+			fmt.Println(i)
+			i++
+		}
 	}
 }
