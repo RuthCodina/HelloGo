@@ -124,7 +124,36 @@ func loopsFour() {
 		fmt.Printf("this is the value, %v in the index %v of xi array\n", v, i)
 	}
 
+	fmt.Println("----------")
+
 	for k, v := range m {
-		fmt.Printf("this is the key, %v an the value %v of m struct\n", k, v)
+		fmt.Printf("this is the key, %v an the value %v of m map\n", k, v)
 	}
+
+	fmt.Println("----------")
+
+	if v, ok := m["Q"]; ok {
+		fmt.Println(v)
+	} else {
+		fmt.Println("the Q doesn't exits in the m map")
+	}
+
+	fmt.Println("----------")
+
+	count := 0
+	for i := 0; i <= 50; i++ {
+		if x := rand.Intn(5); x == 3 {
+			count++
+			fmt.Printf("x is three #%v\n", count)
+		}
+	}
+
+	fmt.Println("----------")
+
+	fmt.Println(true && true)
+	fmt.Println(true && false)
+	fmt.Println(true || true)
+	fmt.Println(true || false)
+	fmt.Println(!true)
+
 }
