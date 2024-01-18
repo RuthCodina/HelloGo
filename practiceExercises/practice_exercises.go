@@ -10,7 +10,9 @@ func PracticeExercises() {
 	// _, _ = ramdomTwo()
 	// loops()
 	//ramdomThree()
-	loopsTwo()
+	//loopsTwo()
+	//loopsThree()
+	loopsFour()
 }
 
 // Create a random number between 0 a 250
@@ -99,5 +101,30 @@ func loopsTwo() {
 			fmt.Println(i)
 			i++
 		}
+	}
+}
+
+func loopsThree() {
+	for i := 0; i <= 5; i++ {
+		for j := 0; j <= 5; j++ {
+			fmt.Printf("this is the outer loop %v, and the inner loop is %v \n", i, j)
+		}
+	}
+}
+
+func loopsFour() {
+	xi := []int{42, 43, 44, 45, 46, 47}
+
+	m := map[string]int{
+		"James":      42,
+		"Moneypenny": 32,
+	}
+
+	for i, v := range xi {
+		fmt.Printf("this is the value, %v in the index %v of xi array\n", v, i)
+	}
+
+	for k, v := range m {
+		fmt.Printf("this is the key, %v an the value %v of m struct\n", k, v)
 	}
 }
