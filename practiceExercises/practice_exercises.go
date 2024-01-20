@@ -12,7 +12,7 @@ func PracticeExercises() {
 	//ramdomThree()
 	//loopsTwo()
 	//loopsThree()
-	loopsFour()
+	//loopsFour()
 }
 
 // Create a random number between 0 a 250
@@ -96,6 +96,7 @@ func loopsTwo() {
 		if i == 13 {
 			break
 		} else if i == 8 {
+			i++
 			continue
 		} else {
 			fmt.Println(i)
@@ -147,13 +148,4 @@ func loopsFour() {
 			fmt.Printf("x is three #%v\n", count)
 		}
 	}
-
-	fmt.Println("----------")
-
-	fmt.Println(true && true)
-	fmt.Println(true && false)
-	fmt.Println(true || true)
-	fmt.Println(true || false)
-	fmt.Println(!true)
-
 }

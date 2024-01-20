@@ -3,10 +3,12 @@ package main
 import (
 	"fmt"
 
-	pE "github.com/RuthCodina/HelloGo/practiceExercises"
+	"github.com/RuthCodina/HelloGo/groupingData"
+	"github.com/RuthCodina/HelloGo/practiceExercises"
 )
 
 func main() {
 	fmt.Println("This is where initialization for my program occurs")
-	pE.PracticeExercises()
+	practiceExercises.PracticeExercises()
+	groupingData.GroupingData()
 }
