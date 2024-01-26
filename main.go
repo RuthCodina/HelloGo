@@ -13,4 +13,5 @@ func main() {
 	practiceExercises.PracticeExercises()
 	groupingData.GroupingData()
 	functions.Functions()
+	functions.Interfaces()
 }
