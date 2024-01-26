@@ -9,7 +9,7 @@ func GroupingData() {
 	//arraiesThree()
 	//maps()
 	//mapsTwo()
-	structs()
+	//structs()
 }
 
 func arraies() {
