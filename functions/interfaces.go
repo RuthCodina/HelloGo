@@ -17,6 +17,8 @@ func Interfaces() {
 
 	fmt.Println("this is the circle area", c.area())
 	fmt.Println("this is the square area", s.area())
+	fmt.Println(info(c))
+	fmt.Println(info(s))
 }
 
 type square struct {

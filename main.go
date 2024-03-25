@@ -1,17 +1,14 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/RuthCodina/HelloGo/functions"
-	"github.com/RuthCodina/HelloGo/groupingData"
-	"github.com/RuthCodina/HelloGo/practiceExercises"
+	"github.com/RuthCodina/HelloGo/interface_mocks"
 )
 
 func main() {
-	fmt.Println("This is where initialization for my program occurs")
-	practiceExercises.PracticeExercises()
-	groupingData.GroupingData()
-	functions.Functions()
-	functions.Interfaces()
+	// fmt.Println("This is where initialization for my program occurs")
+	// practiceExercises.PracticeExercises()
+	// groupingData.GroupingData()
+	// functions.Functions()
+	// functions.Interfaces()
+	interface_mocks.DB()
 }
