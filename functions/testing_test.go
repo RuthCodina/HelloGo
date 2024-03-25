@@ -6,8 +6,8 @@ import (
 
 func Test_doMath(t *testing.T) {
 	num := doMath(1, 2, func(i1, i2 int) int { return 1 + 2 })
-	if num != 1 {
-		t.Errorf("incorrect, got: %d, want:%d.", num, 1)
+	if num != 3 {
+		t.Errorf("incorrect, got: %d, want:%d.", num, 3)
 	}
 }
 
