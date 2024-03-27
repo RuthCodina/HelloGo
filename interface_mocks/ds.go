@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-// Datastore defines and interface for storing retrievable data
+// Datastore defines an interface for storing retrievable data
 // Any type that implements this interface (has these two methods) is also of type ´datastore´.
 // This means any value of Type `MockDatastore` is also of type `Datastore`
 // This means we could have a value of type `*sql.DB` and it can also be of type `Datastore`
@@ -18,7 +18,7 @@ type Datastore interface {
 }
 
 // service represents a service that stores retrievable data
-// we will attach methods to `Service` so that cna use either of these
+// we will attach methods to `Service` so that can use either of these
 // --- `MockDatastore`
 // --- `*sql.DB`
 
