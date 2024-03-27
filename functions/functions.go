@@ -19,6 +19,10 @@ func Functions() {
 	h := p.speak()
 	fmt.Println(h)
 
+	func() {
+		fmt.Printf("anonymous Func, that show person info:  %v", h)
+	}()
+
 }
 
 func foo(array ...int) int {
