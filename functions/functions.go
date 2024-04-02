@@ -30,6 +30,9 @@ func Functions() {
 	fmt.Println("--------------------")
 
 	printTripleAge(p.tripleAge)
+	fmt.Println("--------------------")
+
+	enclose()
 }
 
 func foo(array ...int) int {
@@ -76,4 +79,13 @@ func (p person) tripleAge() int {
 
 func printTripleAge(cb func() int) {
 	fmt.Printf("This is the person age tripled: %v", cb())
+}
+
+func enclose() int {
+	count := 0
+	return func() int {
+		count++
+		fmt.Printf("count goes here: %v\n", count)
+		return count
+	}()
 }
