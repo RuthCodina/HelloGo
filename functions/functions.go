@@ -11,7 +11,7 @@ func Functions() {
 	fmt.Println(y)
 	fmt.Println("--------------------")
 
-	//	defering()
+	defering()
 	p := person{
 		first: "Romina",
 		age:   60,
@@ -19,10 +19,17 @@ func Functions() {
 	h := p.speak()
 	fmt.Println(h)
 
-	func() {
-		fmt.Printf("anonymous Func, that show person info:  %v", h)
-	}()
+	a := func() {
+		fmt.Printf("anonymous Func, that show person info:  %v\n", h)
+	}
+	a()
 
+	b := ask()
+
+	fmt.Printf("this is the ask func response %v\n", b())
+	fmt.Println("--------------------")
+
+	printTripleAge(p.tripleAge)
 }
 
 func foo(array ...int) int {
@@ -55,4 +62,18 @@ type person struct {
 func (p person) speak() string {
 	str := fmt.Sprintf("Hi, mi name is %v, and I have %v", p.first, p.age)
 	return str
+}
+
+func ask() func() int {
+	return func() int {
+		return 42
+	}
+}
+
+func (p person) tripleAge() int {
+	return p.age * 3
+}
+
+func printTripleAge(cb func() int) {
+	fmt.Printf("This is the person age tripled: %v", cb())
 }
